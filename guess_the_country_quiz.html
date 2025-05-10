@@ -73,31 +73,269 @@
 
   <script>
     // List of 50+ questions
-    const questions = [
-      {
-        question: "Which country is known for sushi?",
-        options: ["Japan", "China", "Thailand", "India"],
-        answer: "Japan"
-      },
-      {
-        question: "Which country is famous for pasta?",
-        options: ["Italy", "France", "Germany", "Spain"],
-        answer: "Italy"
-      },
-      {
-        question: "Which country is known for tacos?",
-        options: ["Mexico", "USA", "Brazil", "Argentina"],
-        answer: "Mexico"
-      },
-      {
-        question: "Which country is famous for croissants?",
-        options: ["France", "Germany", "Spain", "Belgium"],
-        answer: "France"
-      },
-      {
-        question: "Which country is known for paella?",
-        options: ["Spain", "Italy", "Greece", "Turkey"],
-        answer: "Spain"
+const questions = [
+  {
+    question: "Which country is known for sushi?",
+    options: ["Japan", "China", "Thailand", "India"],
+    answer: "Japan"
+  },
+  {
+    question: "Which country is famous for pasta?",
+    options: ["Italy", "France", "Germany", "Spain"],
+    answer: "Italy"
+  },
+  {
+    question: "Which country is known for tacos?",
+    options: ["Mexico", "USA", "Brazil", "Argentina"],
+    answer: "Mexico"
+  },
+  {
+    question: "Which country is famous for croissants?",
+    options: ["France", "Germany", "Spain", "Belgium"],
+    answer: "France"
+  },
+  {
+    question: "Which country is known for paella?",
+    options: ["Spain", "Italy", "Greece", "Turkey"],
+    answer: "Spain"
+  },
+  {
+    question: "Which country is known for curry?",
+    options: ["India", "China", "Thailand", "Pakistan"],
+    answer: "India"
+  },
+  {
+    question: "Which country is famous for ramen?",
+    options: ["Japan", "South Korea", "China", "Vietnam"],
+    answer: "Japan"
+  },
+  {
+    question: "Which country is famous for dim sum?",
+    options: ["China", "Japan", "South Korea", "Taiwan"],
+    answer: "China"
+  },
+  {
+    question: "Which country is known for baklava?",
+    options: ["Turkey", "Greece", "Lebanon", "Syria"],
+    answer: "Turkey"
+  },
+  {
+    question: "Which country is famous for hummus?",
+    options: ["Lebanon", "Israel", "Jordan", "Syria"],
+    answer: "Lebanon"
+  },
+  {
+    question: "Which country is known for pizza?",
+    options: ["Italy", "USA", "France", "Spain"],
+    answer: "Italy"
+  },
+  {
+    question: "Which country is famous for kebabs?",
+    options: ["Turkey", "Iran", "Greece", "Pakistan"],
+    answer: "Turkey"
+  },
+  {
+    question: "Which country is known for churros?",
+    options: ["Spain", "Mexico", "Argentina", "Portugal"],
+    answer: "Spain"
+  },
+  {
+    question: "Which country is famous for sausage?",
+    options: ["Germany", "Poland", "France", "Italy"],
+    answer: "Germany"
+  },
+  {
+    question: "Which country is known for lasagna?",
+    options: ["Italy", "Greece", "Turkey", "France"],
+    answer: "Italy"
+  },
+  {
+    question: "Which country is famous for sushi rolls?",
+    options: ["Japan", "South Korea", "Thailand", "China"],
+    answer: "Japan"
+  },
+  {
+    question: "Which country is known for waffles?",
+    options: ["Belgium", "France", "Germany", "Netherlands"],
+    answer: "Belgium"
+  },
+  {
+    question: "Which country is famous for cheese fondue?",
+    options: ["Switzerland", "France", "Belgium", "Germany"],
+    answer: "Switzerland"
+  },
+  {
+    question: "Which country is known for pancakes?",
+    options: ["USA", "France", "Canada", "Mexico"],
+    answer: "USA"
+  },
+  {
+    question: "Which country is famous for fish and chips?",
+    options: ["England", "Ireland", "Scotland", "Australia"],
+    answer: "England"
+  },
+  {
+    question: "Which country is known for gelato?",
+    options: ["Italy", "France", "USA", "Greece"],
+    answer: "Italy"
+  },
+  {
+    question: "Which country is famous for tortellini?",
+    options: ["Italy", "France", "Spain", "Germany"],
+    answer: "Italy"
+  },
+  {
+    question: "Which country is known for falafel?",
+    options: ["Lebanon", "Syria", "Egypt", "Israel"],
+    answer: "Lebanon"
+  },
+  {
+    question: "Which country is famous for goulash?",
+    options: ["Hungary", "Poland", "Czech Republic", "Austria"],
+    answer: "Hungary"
+  },
+  {
+    question: "Which country is known for pad Thai?",
+    options: ["Thailand", "Vietnam", "China", "Cambodia"],
+    answer: "Thailand"
+  },
+  {
+    question: "Which country is famous for dumplings?",
+    options: ["China", "South Korea", "Japan", "Vietnam"],
+    answer: "China"
+  },
+  {
+    question: "Which country is known for moussaka?",
+    options: ["Greece", "Turkey", "Lebanon", "Egypt"],
+    answer: "Greece"
+  },
+  {
+    question: "Which country is famous for tea?",
+    options: ["China", "India", "Sri Lanka", "Turkey"],
+    answer: "China"
+  },
+  {
+    question: "Which country is known for schnitzel?",
+    options: ["Austria", "Germany", "Poland", "Czech Republic"],
+    answer: "Austria"
+  },
+  {
+    question: "Which country is famous for crepes?",
+    options: ["France", "Belgium", "USA", "Spain"],
+    answer: "France"
+  },
+  {
+    question: "Which country is known for seafood paella?",
+    options: ["Spain", "Italy", "France", "Greece"],
+    answer: "Spain"
+  },
+  {
+    question: "Which country is famous for beef Wellington?",
+    options: ["England", "France", "USA", "Scotland"],
+    answer: "England"
+  },
+  {
+    question: "Which country is known for chili?",
+    options: ["USA", "Mexico", "India", "China"],
+    answer: "USA"
+  },
+  {
+    question: "Which country is famous for risotto?",
+    options: ["Italy", "France", "Germany", "Spain"],
+    answer: "Italy"
+  },
+  {
+    question: "Which country is known for hot dogs?",
+    options: ["USA", "Germany", "Poland", "France"],
+    answer: "USA"
+  },
+  {
+    question: "Which country is famous for shawarma?",
+    options: ["Lebanon", "Turkey", "Israel", "Jordan"],
+    answer: "Lebanon"
+  },
+  {
+    question: "Which country is known for bakso?",
+    options: ["Indonesia", "Malaysia", "Thailand", "Vietnam"],
+    answer: "Indonesia"
+  },
+  {
+    question: "Which country is famous for pho?",
+    options: ["Vietnam", "China", "Thailand", "Japan"],
+    answer: "Vietnam"
+  },
+  {
+    question: "Which country is known for empanadas?",
+    options: ["Argentina", "Mexico", "Spain", "Chile"],
+    answer: "Argentina"
+  },
+  {
+    question: "Which country is famous for poutine?",
+    options: ["Canada", "France", "Belgium", "USA"],
+    answer: "Canada"
+  },
+  {
+    question: "Which country is known for kimchi?",
+    options: ["South Korea", "China", "Japan", "Vietnam"],
+    answer: "South Korea"
+  },
+  {
+    question: "Which country is famous for pita bread?",
+    options: ["Greece", "Lebanon", "Turkey", "Syria"],
+    answer: "Greece"
+  },
+  {
+    question: "Which country is known for sushi rolls?",
+    options: ["Japan", "South Korea", "China", "Vietnam"],
+    answer: "Japan"
+  },
+  {
+    question: "Which country is famous for mole?",
+    options: ["Mexico", "Spain", "Italy", "Argentina"],
+    answer: "Mexico"
+  },
+  {
+    question: "Which country is known for bratwurst?",
+    options: ["Germany", "Poland", "Czech Republic", "France"],
+    answer: "Germany"
+  },
+  {
+    question: "Which country is famous for baklava?",
+    options: ["Turkey", "Greece", "Lebanon", "Egypt"],
+    answer: "Turkey"
+  },
+  {
+    question: "Which country is known for nasi goreng?",
+    options: ["Indonesia", "Malaysia", "Thailand", "Singapore"],
+    answer: "Indonesia"
+  },
+  {
+    question: "Which country is famous for sushi?",
+    options: ["Japan", "South Korea", "China", "Vietnam"],
+    answer: "Japan"
+  },
+  {
+    question: "Which country is known for bratwurst?",
+    options: ["Germany", "Poland", "France", "Italy"],
+    answer: "Germany"
+  },
+  {
+    question: "Which country is famous for steak frites?",
+    options: ["France", "Belgium", "Italy", "Spain"],
+    answer: "France"
+  },
+  {
+    question: "Which country is known for falafel?",
+    options: ["Lebanon", "Syria", "Egypt", "Israel"],
+    answer: "Lebanon"
+  },
+  {
+    question: "Which country is famous for waffles?",
+    options: ["Belgium", "Netherlands", "France", "Germany"],
+    answer: "Belgium"
+  }
+];
+    
       },
       // Add more questions here (repeat the format for 50+ questions)
     ];
